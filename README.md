@@ -6,7 +6,7 @@
 
 | Full Name of Participant              | Role                           | Responsibilities            |
 |---------------------------------------|--------------------------------|-----------------------------|
-| Kirtikumar Anandrao Ramchandani      | Software Engineer & Security Researcher              | AI Developer, Automation & Data Analyst                |
+| Kirtikumar Anandrao Ramchandani      | Software Engineer & Security Researcher              | AI Developer, Automation Engineer & Data Analyst                |
 | Priyank Lalitbhai Basrani                      | Electronics and Communications Engineer | Hardware Hacker            |
 
 ### Table of Contents
