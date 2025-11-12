@@ -1,0 +1,19 @@
+{
+  "run_id": "fz_2025_11_12_00123",
+  "seed": "ALS/point_cloud.laz",
+  "mutations": [
+    {"op": "als_header_scale_jitter", "params": {"z_scale": 0.0012}},
+    {"op": "als_point_nan_injection", "params": {"rate": 0.00005}},
+    {"op": "als_drop_returns", "params": {"keep": [1,2]}}
+  ],
+  "pipeline": ["ingest","preprocess","segment","features","reconstruct","export"],
+  "outcome": "PASS_WITH_WARN",
+  "metrics": {
+    "miou_wire": 0.915,
+    "hausdorff_wire_m": 0.031,
+    "tilt_rmse_deg": 0.48,
+    "export_layers": ["tower_axis","insulator","wire"]
+  },
+  "warnings": ["ALS: 585 NaN points sanitized", "CRS not found: defaulted to EPSG:32643"],
+  "artifact": "reports/fuzz_logs/fz_2025_11_12_00123.json"
+}

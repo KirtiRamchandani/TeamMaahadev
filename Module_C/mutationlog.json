@@ -1,0 +1,14 @@
+{
+  "run_id": "fz_2025_11_12_00471",
+  "seed": "AP/frames/flight01/f01_000214.jpg",
+  "mutations": [
+    {"op": "jpeg_recompress", "params": {"quality": 8}},
+    {"op": "exif_strip", "params": {}},
+    {"op": "eo_row_swap", "params": {"row_a": 213, "row_b": 214}}
+  ],
+  "outcome": "FAIL",
+  "stage": "features",
+  "error": "Insulator clustering diverged: no stable crossarm band",
+  "metrics": {"miou_wire": 0.71, "hausdorff_wire_m": 0.19},
+  "artifact": "reports/fuzz_logs/fz_2025_11_12_00471.json"
+}
