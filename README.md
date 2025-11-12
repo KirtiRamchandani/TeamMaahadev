@@ -21,7 +21,7 @@
 
 ---
 
-## [Module A: Planning](./Module_A/README.md)
+## [Module A: Planning]
 - [Project structure planning](./Module_A/README.md)
 - [Team role assignments](./Module_A/README.md)
 - [Timeline and task allocation](./Module_A/README.md) 
