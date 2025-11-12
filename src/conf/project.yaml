@@ -1,0 +1,30 @@
+# Coordinate reference system
+crs: "EPSG:32638"
+
+# ALS
+als: "data/als/segment.laz"
+
+# Rasters
+dtm: "data/rasters/dtm.tif"
+dsm: "data/rasters/dsm.tif"
+orthomosaic: "data/rasters/ortho.tif"
+
+# AP (Aerial Photogrammetry)
+ap_images_dir: "data/ap/images"
+eo: "data/ap/eo/eo.csv"
+intrinsics: "data/ap/intrinsics.yaml"
+
+# Models
+insulator_weights: "models/vision_insulator/yolov8s_ins.pt"
+
+# Thresholds & tuning
+thresholds:
+  wire_hag_min: 8.0         # min height-above-ground for wire candidates
+  linearity_tau: 6.0        # eigen-ratio linearity cutoff
+  span_buffer_m: 20.0       # corridor half-width around span chord
+
+# QC targets (for the report)
+qc_targets:
+  wire_rmse_m: 0.50
+  reproj_px: 2.0
+  tilt_deg: 1.5

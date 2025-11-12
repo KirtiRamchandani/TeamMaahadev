@@ -1,0 +1,33 @@
+{
+  "pipeline": [
+    {
+      "type": "readers.las",
+      "filename": "data/als/segment.laz"
+    },
+    {
+      "type": "filters.range",
+      "limits": "Z[-1000:10000]"
+    },
+    {
+      "type": "filters.smrf",
+      "window": 18.0,
+      "slope": 0.15,
+      "threshold": 0.5,
+      "scalar": 1.2
+    },
+    {
+      "type": "filters.hag_delaunay"
+    },
+    {
+      "type": "filters.normal",
+      "knn": 20
+    },
+    {
+      "type": "writers.las",
+      "minor_version": 4,
+      "dataformat_id": 8,
+      "extra_dims": "all",
+      "filename": "build/segment_hag.laz"
+    }
+  ]
+}

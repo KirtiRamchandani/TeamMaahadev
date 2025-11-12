@@ -1,0 +1,25 @@
+{
+  "pipeline": [
+    {
+      "type": "readers.las",
+      "filename": "data/als/segment.laz"
+    },
+    {
+      "type": "filters.range",
+      "limits": "Z[-1000:10000]"
+    },
+    {
+      "type": "filters.smrf",
+      "window": 18.0,
+      "slope": 0.15,
+      "threshold": 0.5,
+      "scalar": 1.2
+    },
+    {
+      "type": "writers.las",
+      "minor_version": 4,
+      "dataformat_id": 8,
+      "filename": "build/segment_ground.laz"
+    }
+  ]
+}

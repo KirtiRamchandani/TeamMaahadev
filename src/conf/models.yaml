@@ -1,0 +1,18 @@
+insulator:
+  model: "yolov8s.pt"                # base
+  weights: "models/vision_insulator/yolov8s_ins.pt"  # trained output will live here
+  imgsz: 1280
+  conf: 0.25
+  iou: 0.45
+  augment: true
+  train:
+    data_yaml: "conf/datasets/mpid.yaml"
+    epochs: 60
+    batch: 16
+    lr0: 0.01
+    mosaic: 0.7
+    hsv_h: 0.02
+    hsv_s: 0.6
+    hsv_v: 0.4
+    fliplr: 0.5
+    patience: 20

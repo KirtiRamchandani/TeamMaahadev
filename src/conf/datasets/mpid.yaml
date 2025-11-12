@@ -1,0 +1,10 @@
+# Insulator dataset. Replace with your paths and other datasets (PLAD/InsPLAD).
+path: data/datasets/mpid
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: insulator
+
+# Each line: "class xc yc w h" normalized [0,1]
