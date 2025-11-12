@@ -1,0 +1,59 @@
+.home-screen {
+  position: fixed;
+  // top: 0;
+  text-align: center;
+  right: 0;
+  width: 90px;
+  height: 100vh;
+  margin: 15px;
+
+  .nav-option {
+    text-align: center;
+    padding: 0 8px;
+    margin: 5px 0;
+    cursor: pointer;
+
+    .nav-title {
+      margin: 0;
+      font-weight: 500;
+      font-size: 12px;
+      margin-top: -5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home-screen {
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    overflow-x: scroll;
+    display: flex;
+    bottom: 20px;
+    align-items: center;
+    padding: 0 10px;
+
+    .nav-tray {
+      margin: 0 auto;
+      display: flex;
+      position: relative;
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8b2d1;
+  border-radius: 15px;
+  cursor: pointer;
+}

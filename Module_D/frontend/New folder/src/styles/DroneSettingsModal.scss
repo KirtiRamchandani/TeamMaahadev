@@ -1,0 +1,23 @@
+.v-expansion-panel {
+    background-color: transparent !important;
+    padding: 0;
+    margin-top: 20px;
+
+    .v-card,
+    .v-data-table {
+        background-color: transparent;
+    }
+}
+
+.v-btn {
+    width: 150px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+
+    .turn-off-btn {
+        margin-left: 10px;
+    }
+}
