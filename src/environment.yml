@@ -1,0 +1,28 @@
+name: ptl3d
+channels: [conda-forge, pytorch]
+dependencies:
+  - python=3.11
+  - gdal
+  - proj
+  - pdal
+  - rasterio
+  - geopandas
+  - shapely
+  - pyogrio
+  - laspy=2.5.1
+  - open3d
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - jinja2
+  - pytorch
+  - torchvision
+  - cpuonly
+  - pip
+  - pip:
+      - ultralytics==8.2.0
+      - typer
+      - rich
+      - opencv-python
+      - networkx
